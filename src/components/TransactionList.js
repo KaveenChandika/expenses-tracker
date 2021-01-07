@@ -3,9 +3,9 @@ import {GlobalContext} from '../context/GlobalState';
 import Transaction from './Transaction';
 function TransactionList() {
     const {transactions,getTransactions} = useContext(GlobalContext);
-    useEffect(()=>{
-        getTransactions();
-    },[])
+    // useEffect(()=>{
+    //     getTransactions();
+    // },[])
     return (
         <div>
             <h3>History</h3>
