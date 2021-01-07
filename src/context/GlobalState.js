@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
-import axios from "axios";
+import axios from "../components/axios";
 
 //Initial state
 const initialState = {
@@ -19,7 +19,7 @@ export const GlobalProvider = ({ children }) => {
   //Action
   async function getTransactions() {
     try {
-      const res = await axios.get("api/v1/transactions");
+      const res = await axios.get("/api/v1/transactions");
       dispatch({
         type: "GET_TRANSACTION",
         payload: res.data.data,
