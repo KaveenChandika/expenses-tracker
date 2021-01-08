@@ -1,8 +1,8 @@
-import React,{useContext,useEffect} from 'react'
+import React,{useContext} from 'react'
 import {GlobalContext} from '../context/GlobalState';
 import Transaction from './Transaction';
 function TransactionList() {
-    const {transactions,getTransactions} = useContext(GlobalContext);
+    // const {transactions,getTransactions} = useContext(GlobalContext);
     // useEffect(()=>{
     //     getTransactions();
     // },[])
