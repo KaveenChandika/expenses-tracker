@@ -11,7 +11,9 @@ function AddTransaction() {
             text,
             amount: +amount
         }
-        addTransaction(newTransaction)
+        addTransaction(newTransaction);
+        setText("");
+        setAmount("");
     }
     return (
         <div>
